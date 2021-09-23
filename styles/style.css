@@ -22,6 +22,7 @@ body {
   background-color: var(--primaryColour);
   color: var(--primaryTextColour);
   font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 li {
