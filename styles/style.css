@@ -14,7 +14,7 @@
   --primaryColour: #212121;
   --primaryDarkColour: #111;
   --primaryTextColour: #fff;
-  --primaryHover: rgb(56, 178, 172);;
+  --primaryHover: rgb(56, 178, 172);
   --customRed: rgb(245, 101, 101);
   --customLightBlue: rgb(56, 178, 172);
   --customPurple: rgb(159, 122, 234);
@@ -44,7 +44,7 @@ a {
   color: var(--primaryTextColour);
 }
 
-i{
+i {
   font-size: 1.5rem;
 }
 
@@ -83,13 +83,11 @@ i{
   font-family: "Monoton", cursive;
 }
 
-
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
-
 
 .header .menu-icon {
   cursor: pointer;
@@ -134,33 +132,22 @@ i{
   margin-bottom: 1rem;
 }
 
-
-.scrolling{
+.scrolling {
   animation: scroll-left 20s linear infinite;
 }
 
 @keyframes scroll-left {
   0% {
-      -moz-transform: translateX(150%);
-      -webkit-transform: translateX(150%);
-      transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+    transform: translateX(150%);
   }
   100% {
-      -moz-transform: translateX(-250%);
-      -webkit-transform: translateX(-250%);
-      transform: translateX(-250%);
+    -moz-transform: translateX(-250%);
+    -webkit-transform: translateX(-250%);
+    transform: translateX(-250%);
   }
 }
-
-@keyframes typing{
-  from {
-    width: 1%;
-  }
-  to{
-    width: 100%;
-  }
-}
-
 
 .container {
   margin: 3rem;
@@ -362,7 +349,7 @@ i{
   border-radius: 6px;
 }
 
-.interest-grid{
+.interest-grid {
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
@@ -370,7 +357,7 @@ i{
   margin: 1rem auto 0 auto;
 }
 
-.interest-grid-item{
+.interest-grid-item {
   padding: 1rem;
   border-radius: 30px;
   font-size: 1.5rem;
@@ -378,43 +365,43 @@ i{
   margin: 0 auto;
 }
 
-#programming{
+#programming {
   background-color: var(--customRed);
 }
 
-#ai{
+#ai {
   background-color: var(--customLightBlue);
 }
 
-#blockchain{
+#blockchain {
   background-color: var(--customGreen);
 }
 
-#ei{
+#ei {
   background-color: var(--customDarkBlue);
 }
 
-#cv{
+#cv {
   background-color: var(--customPurple);
 }
 
-#networking{
+#networking {
   background-color: var(--customYellow);
 }
 
-#ar{
+#ar {
   background-color: var(--customOrange);
 }
 
-#vr{
+#vr {
   background-color: var(--customRed);
 }
 
-#quantum{
+#quantum {
   background-color: var(--customPurple);
 }
 
-#game{
+#game {
   background-color: var(--customDarkBlue);
 }
 
@@ -432,15 +419,15 @@ i{
   color: var(--primaryTextColour);
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
   color: var(--primaryTextColour);
 }
 
-.form-control:focus{
+.form-control:focus {
   border: 1px solid var(--primaryHover);
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: var(--primaryHover);
   color: var(--primaryTextColour);
   padding: 12px 20px;
@@ -449,7 +436,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: var(--customDarkBlue);
 }
 
@@ -461,7 +448,7 @@ input[type=submit]:hover {
   margin: 0 auto;
 }
 
-footer{
+footer {
   width: 80%;
   background-color: #111;
   color: var(--primaryTextColour);
@@ -469,52 +456,51 @@ footer{
   padding: 2rem;
 }
 
-.footer-grid{
+.footer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   margin: 0 auto 1rem auto;
 }
 
-.footer-grid-item{
+.footer-grid-item {
   padding: 0 10px;
 }
 
-.footer-grid-item h3{
+.footer-grid-item h3 {
   text-align: center;
 }
 
-.footer-grid-item p{
+.footer-grid-item p {
   text-align: justify;
 }
 
-.footer-grid-item ul{
+.footer-grid-item ul {
   text-align: center;
 }
 
-.footer-grid-item ul li{
+.footer-grid-item ul li {
   margin-top: 0.5rem;
 }
 
-.inline ul li{
+.inline ul li {
   display: inline-block;
   margin: 1rem;
 }
 
-.footer-grid-item ul li a:hover{
+.footer-grid-item ul li a:hover {
   color: var(--primaryHover);
 }
 
-.footer-grid-item:not(:last-child){
+.footer-grid-item:not(:last-child) {
   border-right: 1px solid white;
 }
 
-.copyright{
+.copyright {
   margin: 1.5rem auto 0 auto;
   width: 100%;
   text-align: center;
 }
-
 
 @media screen and (min-width: 940px) {
   .header li {
@@ -534,23 +520,23 @@ footer{
 }
 
 @media screen and (max-width: 700px) {
-  .hero-text h1{
+  .hero-text h1 {
     font-size: 2rem;
   }
 
-  .hero-text h2{
+  .hero-text h2 {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .skills-grid{
+  .skills-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .skills-grid{
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -584,17 +570,17 @@ footer{
 }
 
 @media screen and (max-width: 620px) {
-  .interest-grid{
+  .interest-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .footer-grid{
+  .footer-grid {
     grid-template-columns: 1fr;
   }
 
-  .footer-grid-item:not(:last-child){
+  .footer-grid-item:not(:last-child) {
     border-right: none;
     padding: 0 0 10px 0;
     border-bottom: 1px solid var(--primaryTextColour);
