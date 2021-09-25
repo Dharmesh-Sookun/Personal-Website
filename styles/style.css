@@ -12,8 +12,9 @@
 
 :root {
   --primaryColour: #212121;
+  --primaryDarkColour: #111;
   --primaryTextColour: #fff;
-  --primaryHover: #484848;
+  --primaryHover: rgb(56, 178, 172);;
   --customRed: rgb(245, 101, 101);
   --customLightBlue: rgb(56, 178, 172);
   --customPurple: rgb(159, 122, 234);
@@ -35,17 +36,23 @@ body {
 
 li {
   list-style: none;
+  color: var(--primaryTextColour);
 }
 
 a {
   text-decoration: none;
+  color: var(--primaryTextColour);
+}
+
+i{
+  font-size: 1.5rem;
 }
 
 .header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: var(--primaryColour);
+  background-color: var(--primaryDarkColour);
   z-index: 100;
 }
 
@@ -69,11 +76,6 @@ a {
   margin-right: 10px;
 }
 
-.nav-link,
-.nav-logo {
-  color: var(--primaryTextColour);
-}
-
 .nav-logo {
   font-family: "Monoton", cursive;
   font-size: 2em;
@@ -85,7 +87,10 @@ a {
 
 .nav-item:hover {
   cursor: pointer;
-  background-color: var(--primaryHover);
+}
+
+.nav-item a:hover{
+color: var(--primaryHover);
 }
 
 .hero-image {
@@ -371,7 +376,7 @@ a {
 .form-control {
   width: 100%;
   padding: 12px;
-  border: 1px solid var(--primaryHover);
+  border: 1px solid var(--primaryTextColour);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -387,11 +392,11 @@ a {
 }
 
 .form-control:focus{
-  border: 1px solid var(--primaryTextColour);
+  border: 1px solid var(--primaryHover);
 }
 
 input[type=submit] {
-  background-color: var(--customGreen);
+  background-color: var(--primaryHover);
   color: var(--primaryTextColour);
   padding: 12px 20px;
   border: none;
@@ -400,7 +405,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: var(--customDarkBlue);
 }
 
 .form-wrapper {
@@ -409,6 +414,52 @@ input[type=submit]:hover {
   padding: 20px;
   text-align: left;
   margin: 0 auto;
+}
+
+footer{
+  width: 80%;
+  background-color: #111;
+  color: var(--primaryTextColour);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 0 auto 1rem auto;
+}
+
+.footer-grid-item h3{
+  text-align: center;
+}
+
+.footer-grid-item ul{
+  text-align: center;
+}
+
+.footer-grid-item ul li{
+  margin-top: 0.5rem;
+}
+
+.inline ul li{
+  display: inline-block;
+  margin: 1rem;
+}
+
+.footer-grid-item ul li a:hover{
+  color: var(--primaryHover);
+}
+
+.footer-grid-item:not(:last-child){
+  border-right: 1px solid white;
+}
+
+.copyright{
+  margin: 1.5rem auto 0 auto;
+  width: 100%;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
