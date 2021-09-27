@@ -567,15 +567,7 @@ footer {
   .right {
     left: 0%;
   }
-}
 
-@media screen and (max-width: 620px) {
-  .interest-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 550px) {
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -584,5 +576,11 @@ footer {
     border-right: none;
     padding: 0 0 10px 0;
     border-bottom: 1px solid var(--primaryTextColour);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .interest-grid {
+    grid-template-columns: 1fr;
   }
 }
