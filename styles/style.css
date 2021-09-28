@@ -150,12 +150,30 @@ i {
 }
 
 .container {
-  margin: 3rem;
+  margin: 1rem 3rem 3rem 3rem;
 }
 
 .container:not(:first-child) {
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion:hover {
+  cursor: pointer;
+}
+
+.accordion span {
+  margin-left: 2rem;
+}
+
+#about {
+  display: none;
 }
 
 #about img {
@@ -168,6 +186,10 @@ i {
 
 #about p {
   text-align: justify;
+}
+
+#skills {
+  display: none;
 }
 
 .skills-grid {
@@ -272,6 +294,10 @@ i {
   margin: 1rem auto 0 auto;
 }
 
+#education {
+  display: none;
+}
+
 .timeline::after {
   content: "";
   position: absolute;
@@ -349,6 +375,10 @@ i {
   border-radius: 6px;
 }
 
+#interest {
+  display: none;
+}
+
 .interest-grid {
   display: grid;
   grid-template-columns: auto auto;
@@ -405,6 +435,10 @@ i {
   background-color: var(--customDarkBlue);
 }
 
+#contact-me {
+  display: none;
+}
+
 .form-control {
   width: 100%;
   padding: 12px;
@@ -452,7 +486,7 @@ footer {
   width: 80%;
   background-color: #111;
   color: var(--primaryTextColour);
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
   padding: 2rem;
 }
 
